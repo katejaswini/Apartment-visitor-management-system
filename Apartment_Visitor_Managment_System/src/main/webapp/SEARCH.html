@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Visitor by Entry Date</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="date"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #5bc0de;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #31b0d5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Search Visitor by Entry Date</h2>
+        <form action="SEARCH" method="get">
+            <label for="entry_date">Entry Date:</label>
+            <input type="date" id="entry_date" name="entry_date" required>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</body>
+</html>
